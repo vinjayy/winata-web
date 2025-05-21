@@ -11,7 +11,7 @@ import { useLanguage } from "@/contexts/language-context"
 
 export default function Home() {
   const { t, language } = useLanguage()
-  const phoneNumber = "6281413215200"
+  const phoneNumber = "62895384334630"
 
   const handleBookNow = (service: string) => {
     const message =
@@ -56,7 +56,7 @@ export default function Home() {
         <section id="home" className="relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=800&width=1920"
+              src="/hero-1.jpg?height=800&width=1920"
               alt="Spa background"
               fill
               className="object-cover brightness-[0.7]"
@@ -82,14 +82,12 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/20 backdrop-blur-sm"
-                >
+                    className="border-white text-white bg-transparent hover:bg-transparent"                >
                   {t("hero.button.services")}
                 </Button>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-cream-50 to-transparent"></div>
         </section>
 
         {/* About Section */}
@@ -126,7 +124,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/placeholder.svg?height=800&width=600" alt="Spa treatment" fill className="object-cover" />
+                <Image src="/about.jpg?height=800&width=600" alt="Spa treatment" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent"></div>
               </div>
             </div>
@@ -150,7 +148,7 @@ export default function Home() {
               {/* Foot Massage */}
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Foot Massage" fill className="object-cover" />
+                  <Image src="/foot.jpg?height=400&width=600" alt="Foot Massage" fill className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-medium">
                     {t("service.badge.popular")}
@@ -189,10 +187,10 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/bali.jpg?height=400&width=600"
                     alt="Balinese Massage"
                     fill
-                    className="object-cover"
+                    className="object-cover object-bottom"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
@@ -229,10 +227,10 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/aroma.jpg?height=400&width=600"
                     alt="Aroma Therapy Massage"
                     fill
-                    className="object-cover"
+                    className="object-cover object-bottom"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
@@ -265,10 +263,10 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/deep-tissue.jpg?height=400&width=600"
                     alt="Deep Tissue Massage"
                     fill
-                    className="object-cover"
+                    className="object-cover object-bottom"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
@@ -305,7 +303,7 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/stone.jpg?height=400&width=600"
                     alt="Hot Stone Massage"
                     fill
                     className="object-cover"
@@ -345,7 +343,7 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="relative h-48 w-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/manicure.jpg?height=400&width=600"
                     alt="Beauty Services"
                     fill
                     className="object-cover"
@@ -511,7 +509,7 @@ export default function Home() {
               <p className="text-emerald-100 mb-4">{t("footer.description")}</p>
               <div className="flex items-center gap-2">
                 <PhoneCall className="h-5 w-5 text-emerald-300" />
-                <span>+62 814 1321 5200</span>
+                <span>+62 8953 8433 4630</span>
               </div>
             </div>
 
@@ -534,7 +532,7 @@ export default function Home() {
       </footer>
 
       {/* WhatsApp Button */}
-      <WhatsAppButton phoneNumber="6281413215200" />
+      <WhatsAppButton phoneNumber="62895384334630" />
     </div>
   )
 }
