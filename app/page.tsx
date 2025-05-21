@@ -25,9 +25,6 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-pattern text-foreground">
-            {/* Loading Screen */}
-      <LoadingScreen />
-
       {/* Header */}
       <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
